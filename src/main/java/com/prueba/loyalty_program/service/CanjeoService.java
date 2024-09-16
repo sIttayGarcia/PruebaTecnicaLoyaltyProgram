@@ -76,7 +76,6 @@ public class CanjeoService {
             throw new CanjeoException("El usuario no tiene canjes de recompensas");
         }
 
-
         // Convertir cada registro de canje a un DTO
         return canjes.stream()
                 .map(canje -> new ResponseHistoriaCanjes(canje))

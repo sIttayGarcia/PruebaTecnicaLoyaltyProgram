@@ -18,7 +18,7 @@ public class LoginService {
     private UsuarioRepository usuarioRepository;
 
     @Autowired
-    private JwtUtil jwtUtil; // Inyectamos la utilidad JWT
+    private JwtUtil jwtUtil;
 
     public ResponseLogin login(LoginDTO loginRequestDTO) throws Exception {
         // Buscar al usuario por email o username

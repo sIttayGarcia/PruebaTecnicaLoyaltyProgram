@@ -62,7 +62,6 @@ public class UsuarioController {
         }
     }
 
-    // Endpoint para obtener el detalle de todos los usuarios
     @GetMapping("/detalle/todos")
     public ResponseEntity<List<ResponseUsuarioDetail>> getAllUser() {
         List<ResponseUsuarioDetail> detallesUsuarios = usuarioService.getAllUsers();
